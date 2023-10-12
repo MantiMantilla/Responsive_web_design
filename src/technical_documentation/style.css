@@ -1,0 +1,92 @@
+body {
+  margin: 0px;
+}
+
+#whole-page {
+  margin: auto;
+  max-width: 1500px;
+  height: 100vh;
+  font-family: system-ui;
+  display: flex;
+}
+#nav-div {
+  background-color: rgb(247, 250, 252);
+  max-width: 350px;
+  min-height: 100%;
+  position: fixed;
+  border-style: solid;
+  border-width: 0px 3px 0px 0px;
+}
+#navbar #docs-logo-div {
+  max-width: 100%;
+  height: auto;
+  padding: 30px;
+}
+#navbar #docs-logo {
+  max-width: 100%;
+  height: auto;
+}
+#navbar h1 {
+  padding: 10px;
+  margin: 0px;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+}
+#navbar ul {
+  min-width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+#navbar li {
+  list-style-type: none;
+  min-width: 100%;
+  margin: 0px;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  padding: 0px;
+}
+
+#navbar a {
+  font-family: monospace;
+  font-size: 1.5rem;
+  display: block;
+  box-sizing: border-box;
+  color: black;
+  text-decoration-line: none;
+  min-width: 100%;
+  min-heigth: 100%;
+  padding: 10px 20px;
+  transition: 0.5s;
+}
+
+#navbar a:hover {
+  background-color: #eeb;
+}
+#main-div {
+  padding: 20px;
+  font-size: 1.3rem;
+  margin-left: 350px;
+}
+#main-div p {
+  text-align: justify;
+}
+#main-div pre {
+  background-color: rgb(240, 240, 245);
+  border-radius: 4px;
+}
+@media (max-width: 359px) and (min-width: 250px) {
+  #nav-div {
+    max-width: 30% !important;
+  }
+  #main-div {
+    margin-left: 107px !important;
+  }
+}
+@media (max-width: 249px) {
+  #nav-div {
+    max-width: 0% !important;
+  }
+  #main-div {
+    margin-left: 1px !important;
+  }
+}

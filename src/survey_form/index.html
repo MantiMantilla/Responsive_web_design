@@ -1,0 +1,87 @@
+<head>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<div class="main">
+  <div class="center-piece">
+    <H1 id="title">Digital Experience Survey</H1>
+    <p id="description">Welcome to our digital experience survey! We're looking to gather some information about what tech specs are most common and preferable among a preselected group of people.<br> Filling in this form will enable you to participate in a raffle of up to 100 COP. We will reach out to you with the results of the raffle.</p>
+
+    <form id="survey-form">
+      <!-- Name Input -->
+      <label id="name-label" for="name">First name:</label>
+      <input type="text" id="name" name="name" placeholder="Your first name" required/>
+      <br>
+      <label id="last-name-label" for="last-name">Last name:</label>
+      <input type="text" id="last-name" name="last-name" placeholder="Your last name" required>
+      <br>
+      <!-- E-mail Input -->
+      <label id="email-label" for="email">Enter your email:</label>
+      <input type="email" id="email" name="email" placeholder="Your email address" required>
+      <br>
+      <!-- Number Input -->
+      <label id="number-label" for="number">Devices with internet access:</label>
+      <input type="number" id="number" name="number" min="0" max="15" placeholder="1" required>
+      <br>
+      <!-- Dropdown Input -->
+      <label for="OS">Choose your favorite OS:</label>
+      <select name="OS" id="dropdown">
+        <option value="windows-10">Windows 10</option>
+        <option value="windows-older">Older Windows</option>
+        <option value="macos">macOS</option>
+        <option value="chrome-os">Chrome OS</option>
+        <option value="linux">Linux Distro</option>
+        <option value="other">Other</option>
+      </select>
+      <br>
+      <!-- Radio Input -->
+      <p>How often do you replace your cellphone for a new one?</p>
+      <div class="replacement">
+        <input type="radio" id="months" name="replacement" value="months">
+        <label for="male">Every few months</label>
+      </div>
+      <div class="replacement">
+        <input type="radio" id="years" name="replacement" value="years">
+        <label for="female">Every few years</label>
+      </div>
+      <div class="replacement">
+        <input type="radio" id="necessary" name="replacement" value="necessary">
+        <label for="other">When absolutely necessary</label>
+      </div>
+
+      <!-- Checkbox Input -->
+      <p>What gender identity do you subscribe to?</p>
+      <div class="gender">
+        <input type="checkbox" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+      </div>
+      <div class="gender">
+        <input type="checkbox" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+      </div>
+      <div class="gender">
+        <input type="checkbox" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+      </div><br>
+
+      <!-- Comments Input -->
+      <label for="comments">Additional Comments:</label>
+      <textarea id="comments" name="comments" rows="6" cols="100" placeholder="Tell us what you thought of the survey!"></textarea><br>
+
+      <!-- Submit Input -->
+      <div class="submit">
+        <input type="submit" value="Submit" id="submit">
+      </div>
+    </form>
+  </div>
+</div>
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->

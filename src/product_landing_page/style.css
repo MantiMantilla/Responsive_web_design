@@ -1,0 +1,112 @@
+@media (max-width: 800px) {
+  #nav-bar {
+    visibility: hidden;
+  }
+}
+main a {
+  color: black;
+  text-decoration-line: none;
+}
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: system-ui;
+}
+#main-content {
+  width: 100%;
+}
+.content {
+  max-width: min(1200px, 100vw);
+  margin: auto;
+}
+#div-header {
+  background-color: rgb(247, 250, 252);
+  border-bottom: 1px solid rgb(235, 244, 255);
+  display: block;
+  position: fixed;
+  width: 100%;
+}
+#header {
+  display: flex;
+  height: auto;
+  justify-content: space-between;
+}
+#header-left {
+  display: flex;
+  max-height: 100%;
+}
+#header-img {
+  height: 60px;
+  width: auto;
+  margin: 10px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: black;
+}
+#nav-bar {
+  display: flex;
+  align-items: center;
+  font-family: system-ui;
+  font-size: 1.5rem;
+}
+#nav-bar a {
+  color: black;
+  text-decoration-line: none;
+}
+.nav-link {
+  margin: auto 15px auto 15px;
+}
+#nav-bar div {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+}
+#nav-bar div:hover {
+  background-color: rgb(237, 100, 166);
+  color: white;
+}
+#video-section {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-bottom: 1px solid rgb(235, 244, 255);
+  padding-top: 100px;
+}
+#video-contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+}
+#form-section {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-bottom: 1px solid rgb(235, 244, 255);
+}
+#form-contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  width: 100%;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  background-color: rgb(237, 100, 166);
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+#form input {
+  border-radius: 5px;
+  height: 30px;
+  font-size: 1.2rem;
+  border: 1px;
+  border-style: solid;
+  border-color: rgb(235, 244, 255);
+}
